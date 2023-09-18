@@ -2,6 +2,11 @@ public class Engine {
     private double power;
     private String model;
 
+    public Engine(double power, String model) {
+        this.power = power;
+        this.model = model;
+    }
+
     public double getPower() {
         return power;
     }
