@@ -1,28 +1,15 @@
-abstract class Car {
+abstract class Moto {
     private String model;
     private Engine engine;
     private Battery battery;
 
-    public Car() {
+    public Moto() {
     }
 
-    public Car(String model, Engine engine, Battery battery) {
+    public Moto(String model, Engine engine, Battery battery) {
         this.model = model;
         this.engine = engine;
         this.battery = battery;
-    }
-
-    public void start(){
-        System.out.println("Start");
-        engine.start();
-    }
-    public void stop(){
-        System.out.println("Stop");
-        engine.stop();
-    }
-
-    public void setModel(String model) {
-        this.model = model;
     }
 
     public String getModel() {
@@ -37,6 +24,10 @@ abstract class Car {
         return battery;
     }
 
+    public void setModel(String model) {
+        this.model = model;
+    }
+
     public void setEngine(Engine engine) {
         this.engine = engine;
     }
@@ -44,4 +35,14 @@ abstract class Car {
     public void setBattery(Battery battery) {
         this.battery = battery;
     }
+
+    public void start(){
+        System.out.println("Start");
+        engine.start();
+    }
+    public void stop(){
+        System.out.println("Stop");
+        engine.stop();
+    }
+
 }
